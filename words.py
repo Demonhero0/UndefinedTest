@@ -2,13 +2,6 @@ import re
 
 pattern = re.compile(r'[a-zA-Z]+')
 
-def dsymbol(word):
-    symbol = ['"',':']
-    for s in symbol:
-        if s in word:
-            word = word.replace(s,'')
-    return word
-
 def GetTheWords(path):
 
     file = open(path,'r')
